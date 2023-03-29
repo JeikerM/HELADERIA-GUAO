@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* justify-content: flex-start; */
     height: 100%;
     width: 100%;
     margin-left: 100px;
@@ -24,27 +23,31 @@
     
 
 }
+/* NAVBAR */
 .menu{
     display: flex;
     width: 50%;
 }
 .menu dl {
+    margin-top: 15px;
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     margin-left: 450px;
 }
 .menu dl a{
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 900;
     color: #F6285A;
     text-decoration: none;
     margin-left: 25px;
 }
 .menu dl a:hover{
     color: #F5BD19;
-    font-size: 25px;
+    font-size: 20px;
 }
+/* NAVBAR */
+/* Logo Principal de la Pagina */
 .logoPrincipal{
     width: 100%;
     display: flex;
@@ -70,11 +73,12 @@
 /* ---------- MAIN -----------*/
 .separador{
     border-top: #F6285A solid 8px;
-    margin-left: 40px;
-    margin-right: 550px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-top: 90px;
     align-items: center;
 }
+/* NOSOTROS */
 .nosotros{
 
 padding: 30px;
@@ -109,7 +113,8 @@ color: black;
     padding-bottom: 50px;
  
 }
-
+/* NOSOTROS */
+/* Carrousel */
 #carouselExampleControls {
     height: 80%;
     width: 80%;
@@ -120,22 +125,78 @@ color: black;
  display: flex;
  flex-direction: column;
  align-items: center;
- 
+ margin-top: -150px;
+ margin-bottom: 120px;
 }
-@media screen and (max-width: 1680px){
-    .backGround{
-        display: flex;
-        background-image: url(../image/PORTADA\ PARA\ WEB\ GUAO_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.jpg );
-        background-size:cover;
-        height: 100vh;
-        width: 100vw;
-        background-repeat: no-repeat;
-    }
-    .tituloHeader{
-        font-size: 60px;
-        margin-top: 40px;
-        margin-left: 20000px; ;
-        font-weight: 700;
-        width: 40%;
-        height: 40%;
+/* Carrousel */
+/* Distribuidoras */
+.distribuidoras{
+    border-top: 6px solid #F6285A;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.distribuidoraTitulo{
+    margin: 60px;
+    font-size: 60px;
+    color: #F5BD19;
+}
+.ordenDistribuidoras{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    height: 350px;
+    border: #F5BD19 solid 2px;
+}
+.iconifyCard{
+    font-size: 40px;
+    text-decoration: none;
+    color: #25D366;
+}
+.mapa{
+    border-radius: 5px;
+    width: 150px;
+    height: 90%;
+    background-color: #F6285A;
+    font-weight: 600;
+    color: white;
+}
+.mapa:hover{
+    background-color: white;
+    height: 30px;
+    color: #F6285A;
+}
+.ordenButtomCard{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+/* Heladerias */
+.heladerias{
+    margin-top: 60px;
+    background-image: url(../image/background\ heladerias.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 20px;
+}
+.heladeriaTitulo{
+    margin: 60px;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 150px;
+}
+.ordenHeladerias{
+    display: flex;
+justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.cardHeladerias{
+    height: 500px;
+    border: #F5BD19 solid 2px;
 }
