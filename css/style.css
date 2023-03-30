@@ -147,8 +147,12 @@ color: black;
     flex-wrap: wrap;
 }
 .card{
-    height: 350px;
+    height: 400px;
     border: #F5BD19 solid 2px;
+}
+.card-text{
+    text-align: center;
+    font-weight: 500;
 }
 .iconifyCard{
     font-size: 40px;
@@ -168,8 +172,11 @@ color: black;
     height: 30px;
     color: #F6285A;
 }
+.cardTitulos{
+    text-align: center;
+}
 .ordenButtomCard{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center
@@ -180,7 +187,7 @@ color: black;
     background-image: url(../image/background\ heladerias.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     padding-top: 20px;
 }
 .heladeriaTitulo{
@@ -197,6 +204,42 @@ justify-content: space-evenly;
 
 }
 .cardHeladerias{
-    height: 500px;
+    height: 350px;
     border: #F5BD19 solid 2px;
+}
+/* Mision-Vision-Valores */
+.sectionObjetivos{
+    align-items: center;
+    background-color: #F6285A;
+    border-top: #F5BD19 groove 5px;
+}
+.objetivosFlex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    /* margin-bottom: 70px */
+    padding-top: 50px;
+}
+.objetivosFlex h2{
+    font-size: 50px;
+    padding: 50px;
+    color: white;
+}
+.objetivosFlex p{
+    margin-left: 400px;
+    margin-top: 50px;
+    
+}
+.image7{
+    display: flex;
+    justify-content: space-around;
+}
+.image7 img{
+    width: 30%;
+}
+.image7 p{
+    width: 30%;
+    margin-right: 500px;
+    text-align: unset;
+    margin-top: 500px;
 }
