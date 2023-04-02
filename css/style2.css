@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.logoPrincipal {
+    height: 100px;
+    width: 100px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 98.8vw;
+    background-image: url(../image/PORTADA\ PARA\ WEB\ GUAO_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.jpg );
+    background-size: cover;
+
+}
+.textoPrincipal {
+    align-self: center;
+    margin-left: 500px;
+    margin-top: 40px;
+    font-size: 80px;
+    font-weight: 700;
+    width: 30vw;
+    height: 20vh;
+}
+
+/* seccion nosotros */
+.section1 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.imgNosotros{
+    width: 25%;
+    margin-left: 50px;
+}
+.separador{
+    border-top: #F6285A solid 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 90px;
+    align-items: center;
+}
+.nosotros{
+    padding: 30px;
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 90px;
+    color: black;
+}
+.ordenSectionNosotros{
+    display: flex;
+    margin-left: 60px;
+    border-bottom: #F5BD19 8px solid;
+    margin-right: 60px;
+    padding-bottom: 50px;
+}
+/* Carrousel */
+#carouselExampleControls {
+    height: 80%;
+    width: 80%;
+    margin-top: 200px;
+    border: #F6285A 4px solid;
+}
+.fondoCarrousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: 120px;
+}
+/* Carrousel */
+/* Distribuidoras */
+
+.distribuidoras{
+    border-top: 6px solid #F6285A;
+    margin-left: 60px;
+    margin-right: 60px;
+    min-height: 100vh;
+}
+.distribuidoraTitulo{
+    margin: 60px;
+    font-size: 60px;
+    color: #F5BD19;
+}
+.ordenDistribuidoras{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tarjeta{
+    height: 340px;
+    border: #F5BD19 solid 2px;
+    width: 18rem;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.cardDireccion{
+    min-height: 150px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.card-text{
+    text-align: center;
+    font-weight: 500;
+}
+.iconifyCard{
+    font-size: 40px;
+    text-decoration: none;
+    color: #25D366;
+}
+.mapa{
+    border-radius: 5px;
+    width: 150px;
+    height: 90%;
+    background-color: #F6285A;
+    font-weight: 600;
+    color: white;
+}
+.mapa:hover{
+    background-color: white;
+    height: 30px;
+    color: #F6285A;
+}
+.cardTitulos{
+    text-align: center;
+}
+.ordenButtomCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+/* Heladerias */
+.heladerias{
+    background-image: url(../image/background\ heladerias.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding-top: 20px;
+}
+.heladeriaTitulo{
+    margin: 60px;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 150px;
+}
+.ordenHeladerias{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tarjetaHelados{
+    height: 329px;
+    border: #F5BD19 solid 2px;
+    width: 18rem;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.cardDireccionHelados{
+    height: 160px;
+    padding: 30px;
+    background-color: white;
+}
+.ordenButtomCardHelados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+/* Mision-Vision-Valores */
+.sectionObjetivos{
+    align-items: center;
+    background-color: #F6285A;
+    
+}
+.objetivosFlex{
+    display: flex;
+    padding-left: 20px;
+}
+.borderObjetivos{
+    border-top: #F5BD19 dashed 2px;
+}
+.objetivosFlex h2{
+    font-size: 50px;
+    color: white;
+    align-self: center;
+}
+.objetivosFlex p{
+
+    padding-top: 30px;
+    padding-right: 20px;
+    margin-right: 5px;
+}
+/*texto referencial */
+.image7{
+    display: flex;
+    justify-content: space-around;
+}
+.image7 img{
+    width: 60%;
+}
+.image7 p{
+    font-size: 50px;
+    width: 40%;
+    text-align: unset;
+    margin-top: 500px;
+}
+.creciendoContigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: #F6285A 3px solid;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+.imageCreciendoContigo{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+.sectionTitle {
+    font-size: 70px;
+    padding: 2rem;
+}
+/* footer */ 
+.footerClass{
+    background-color: #60291C;
+}
+.separadorFooter{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.separadorFooter img{
+    height: 10%;
+    width: 10%;
+}
+.ordenFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: #F5BD19 solid 5px;
+}
+.ordenFooter h2{
+    font-size: 50px;
+    color: #F5BD19;
+}
+.ordenFooter DD{
+    margin-top: 10px;
+    color: #F5BD19;
+    text-align:start;
+    line-height: 15px;
+}
+.footerEmail{
+    font-size: 35px;
+    color: #F5BD19;
+    width: 400px;
+}
+.footerEmail a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #F5BD19;
+}
+.redesSociales h3{
+    color: #F5BD19;
+}
+.ordenRedesSociales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.whatsapp{
+    font-size: 40px;
+    text-decoration: none;
+    color: #25D366;
+    margin-bottom: 20px;
+}
+.instagram{
+    font-size: 50px;
+    text-decoration: none;
+    color: #f34470;
+}
+.facebook{
+    font-size: 40px;
+    text-decoration: none;
+    color: #1877F2;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .logoPrincipal{
+        height: 250px;
+        width: 250px;
+    }
+    .textoPrincipal{
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: 50px;
+        width: 35vw;
+    }
+    .distribuidoras{
+        min-height: 50vh;
+    }
+    .heladerias{
+        min-height: 40vh;
+    }
+    .header{
+        background-position: -850px  
+    }
+    .section1{
+        min-height: 70vh;
+        width: 98vw;
+    }
+    .ordenSectionNosotros{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .nosotros {
+        width: 100%;
+    }
+    .textoNosotros {
+        font-size: 40px;
+    }
+    .imgNosotros{
+        height: 500px;
+        width: 500px;
+    }
+    .tarjeta {
+        height: 370px;
+    }
+    .cardDireccion, .cardDireccionHelados {
+        height: 180px;
+        font-size: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .mapa {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .card-img-top-distribuidoras, .card-img-top-helados {
+        height: 130px;
+    }
+    .tarjetaHelados {
+        height: 354px;
+        border-radius: 1px;
+    }
+    .objetivosFlex p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        background-position: -1050px  
+    }
+    .textoPrincipal{
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: 50px;
+        width: 65vw;
+    }
+    .objetivosFlex p {
+        padding-left: 50px;
+    }
+    .image7 {
+        flex-direction: column-reverse;
+    }
+    .image7 img {
+        width: 100%;
+    }
+    .image7 p {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ordenFooter {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 741px) {
+    .header{
+        background-position: -1400px; 
+        height: 120vh 
+    }
+    .textoPrincipal{
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: 1000px;
+        width: 65vw;
+    }
+    .nosotros {
+        font-size: 60px;
+    }
+    .imgNosotros {
+        height: 400px;
+        width: 400px;
+    }
+    .objetivosFlex p {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .distribuidoraTitulo {
+        margin: 30px;
+    }
+    .tarjetaHelados {
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width: 580px) {
+    .header{
+        background-position: -1700px  
+    }
+    .textoPrincipal{
+        margin-top: 50px;
+        width: 85vw;
+    }
+    .distribuidoraTitulo {
+        margin-left: -50px;
+        font-size: 55px;
+    }
+    .tarjeta {
+        width: 500px;
+        height: 700px;
+    }
+    .card-img-top-distribuidoras {
+        height: 300px;
+    }
+    .cardTitulos {
+        font-size: 50px;
+    }
+    .cardDireccion {
+        height: 320px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .mapa {
+        font-size: 30px;
+        width: 220px;
+        height: 60px;
+    }
+    .heladeriaTitulo {
+        margin-left: 5px;
+    }
+    .tarjetaHelados {
+        width: 400px;
+        height: 700px;
+        margin-bottom: 2rem;
+    }
+    .card-img-top-helados {
+        height: 300px;
+    }
+    .cardDireccionHelados {
+        height: 335px;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .objetivosFlex h2 {
+        font-size: 40px;
+    }
+    .objetivosFlex p {
+        margin-left: 20px;
+    }
+    .sectionTitle {
+        font-size: 68px
+    }
+    .image7 p {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nosotros{
+        margin-left: 0;
+        font-size: 50px;
+    }
+    .imgNosotros {
+        height: 300px;
+        width: 300px;
+        margin-left: 0;
+    }
+    .distribuidoraTitulo {
+        font-size: 45px;
+    }
+    .tarjeta {
+        height: 1000px;
+    }
+    .cardDireccion {
+        height: 720px;
+        font-size: 45px;
+    }
+    .card-img-top-distribuidoras {
+        height: 200px;
+    }
+    .heladeriaTitulo {
+        font-size: 63px;
+    }
+    .tarjetaHelados {
+        width: 360px;
+    }
+    .card-img-top-helados {
+        height: 200px;
+    }
+    .cardDireccionHelados {
+        height: 435px;
+        font-size: 41px;
+        padding-top: 50px;
+    }
+    .ordenButtomCard, .ordenButtomCardHelados {
+        gap: 1rem;
+    }
+    .objetivosFlex {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .objetivosFlex h2{
+        font-size: 70px;
+        color: white;
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+    .objetivosFlex p{
+        width:90%!important;
+        padding-top: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 10px;
+        padding-left: 5px;
+    }
+    .sectionTitle {
+        font-size: 42px
+    }
+    .section7 p {
+        font-size: 20px;
+    }
+    .footerEmail {
+        width: 300px;
+    }
+    .telefonos {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nosotros{
+        font-size: 40px;
+    }
+    .distribuidoraTitulo {
+        font-size: 38px;
+    }
+    .objetivosFlex h2{
+        
+        margin-left: 0px;
+    }
+    .contactanos h2{
+        font-size: 43px;
+    }
+    .footerEmail a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .textoPrincipal{
+        font-size: 60px;
+    }
+    .heladeriaTitulo {
+        font-size: 52px;
+    }
+    .tarjetaHelados {
+        width: 310px;
+    }
+    .card-img-top-helados {
+        height: 200px;
+    }
+    .cardDireccionHelados {
+        height: 435px;
+        font-size: 36px;
+        padding-top: 30px;
+    }
+    
+}
