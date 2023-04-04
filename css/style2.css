@@ -2,30 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 
 .logoPrincipal {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+.container-fluid{
+    height: 120px;
 }
 .header {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 98.8vw;
     background-image: url(../image/PORTADA\ PARA\ WEB\ GUAO_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.jpg );
     background-size: cover;
 
 }
 .textoPrincipal {
-    align-self: center;
-    margin-left: 500px;
-    margin-top: 40px;
-    font-size: 80px;
+    margin-left: 50%;
+    text-align: center;
+    margin-top: 250px;
+    font-size: 70px;
     font-weight: 700;
-    width: 30vw;
-    height: 20vh;
+    height: 50vh;
+    text-transform: uppercase;
+    width: 50%;
+}
+.menuColor a{
+    font-weight: 500;
+}
+.menuColor a:hover{
+    color: #F6285A;
+    font-weight: 700;
 }
 
 /* seccion nosotros */
@@ -37,6 +46,13 @@
 .imgNosotros{
     width: 25%;
     margin-left: 50px;
+}
+.textoNosotros{
+    font-size: 35px;
+    width: 50%;
+    word-wrap: break-word;
+    height: 100%;
+    font-weight: 600
 }
 .separador{
     border-top: #F6285A solid 8px;
@@ -56,6 +72,7 @@
 }
 .ordenSectionNosotros{
     display: flex;
+    justify-content: space-around;
     margin-left: 60px;
     border-bottom: #F5BD19 8px solid;
     margin-right: 60px;
@@ -183,11 +200,16 @@
 .sectionObjetivos{
     align-items: center;
     background-color: #F6285A;
-    
+    height: 70vh;
 }
 .objetivosFlex{
     display: flex;
-    padding-left: 20px;
+    padding: 50px;
+}
+.objetivosFlex p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
 }
 .borderObjetivos{
     border-top: #F5BD19 dashed 2px;
@@ -204,18 +226,28 @@
     margin-right: 5px;
 }
 /*texto referencial */
+#emprendeConGuao{
+height: 100vh;
+}
+.sectionTitle {
+    width: 35%;
+    font-size: 80px;
+    padding: 4rem;
+    text-transform: uppercase;
+}
 .image7{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .image7 img{
-    width: 60%;
+    height: 35%;
+    width: 35%;
 }
 .image7 p{
-    font-size: 50px;
+    font-size: 30px;
     width: 40%;
     text-align: unset;
-    margin-top: 500px;
 }
 .creciendoContigo{
     display: flex;
@@ -231,10 +263,7 @@
     height: 100%;
     margin-top: 60px;
 }
-.sectionTitle {
-    font-size: 70px;
-    padding: 2rem;
-}
+
 /* footer */ 
 .footerClass{
     background-color: #60291C;
@@ -358,8 +387,17 @@
         height: 354px;
         border-radius: 1px;
     }
+    .sectionObjetivos{
+        height: 1800px;
+    }
+    .objetivosFlex{
+        flex-direction: column;
+        align-items: center;
+    }
     .objetivosFlex p {
-        font-size: 30px;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -389,6 +427,13 @@
     .ordenFooter {
         flex-direction: column;
     }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
+    }
 
 }
 
@@ -396,6 +441,9 @@
     .header{
         background-position: -1400px; 
         height: 120vh 
+    }
+    #carouselExampleControls{
+        width: 100%;
     }
     .textoPrincipal{
         align-self: flex-end;
@@ -414,6 +462,13 @@
         font-size: 20px;
         margin-left: 50px;
     }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
+    }
 }
 
 @media screen and (max-width: 672px) {
@@ -422,6 +477,13 @@
     }
     .tarjetaHelados {
         margin-bottom: 10px;
+    }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
     }
     
 }
@@ -485,6 +547,17 @@
     .image7 p {
         font-size: 30px;
         width: 100%;
+    }
+    .ordenFooter{
+        display: flex;
+        align-items: center;
+    }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
     }
 }
 @media screen and (max-width: 480px) {
@@ -553,6 +626,10 @@
     }
     .footerEmail {
         width: 300px;
+
+    }
+    .footerEmail h3{
+        text-align: center;
     }
     .telefonos {
         font-size: 20px;
