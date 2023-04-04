@@ -5,8 +5,11 @@
 }
 
 .logoPrincipal {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+.container-fluid{
+    height: 120px;
 }
 .header {
     display: flex;
@@ -25,6 +28,13 @@
     height: 50vh;
     text-transform: uppercase;
     width: 50%;
+}
+.menuColor a{
+    font-weight: 500;
+}
+.menuColor a:hover{
+    color: #F6285A;
+    font-weight: 700;
 }
 
 /* seccion nosotros */
@@ -373,9 +383,6 @@ height: 100vh;
     .card-img-top-distribuidoras, .card-img-top-helados {
         height: 130px;
     }
-    .ordenHeladerias{
-        
-    }
     .tarjetaHelados {
         height: 354px;
         border-radius: 1px;
@@ -434,6 +441,9 @@ height: 100vh;
     .header{
         background-position: -1400px; 
         height: 120vh 
+    }
+    #carouselExampleControls{
+        width: 100%;
     }
     .textoPrincipal{
         align-self: flex-end;
