@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 
 .logoPrincipal {
@@ -389,6 +388,13 @@
     .ordenFooter {
         flex-direction: column;
     }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
+    }
 
 }
 
@@ -414,6 +420,13 @@
         font-size: 20px;
         margin-left: 50px;
     }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
+    }
 }
 
 @media screen and (max-width: 672px) {
@@ -422,6 +435,13 @@
     }
     .tarjetaHelados {
         margin-bottom: 10px;
+    }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
     }
     
 }
@@ -485,6 +505,17 @@
     .image7 p {
         font-size: 30px;
         width: 100%;
+    }
+    .ordenFooter{
+        display: flex;
+        align-items: center;
+    }
+    .footerEmail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+
     }
 }
 @media screen and (max-width: 480px) {
@@ -553,6 +584,10 @@
     }
     .footerEmail {
         width: 300px;
+
+    }
+    .footerEmail h3{
+        text-align: center;
     }
     .telefonos {
         font-size: 20px;
