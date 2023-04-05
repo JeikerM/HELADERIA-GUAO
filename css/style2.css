@@ -93,12 +93,71 @@
     margin-bottom: 120px;
 }
 /* Carrousel */
-/* Distribuidoras */
+/* Card */
+.tarjetaNueva {
+    min-height: 300px;
+    border: #F5BD19 solid 2px;
+    width: 18rem;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.imgTarjeta {
+    width: 100%;
+    height: 40%;
+}
+.contenedorTarjeta {
+    height: 60%;
+    width: 100%;
+}
+.tituloTarjeta {
+    height: 20%;
+    text-align: center;
+    padding: 20px;
+}
+.textoTarjeta {
+    height: 45%;
+    text-align: center;
+    padding: 20px 5px 0px 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.contactosTarjeta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    margin-bottom: 50px;
+}
 
-.distribuidoras{
+.iconifyCard{
+    font-size: 40px;
+    text-decoration: none;
+    color: #25D366;
+}
+.mapa{
+    border-radius: 5px;
+    width: 150px;
+    height: 60%;
+    background-color: #F6285A;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.mapa:hover{
+    background-color: white;
+    height: 30px;
+    color: #F6285A;
+}
+/*Card*/
+/* Distribuidoras */
+.bordeDistribuidoras {
     border-top: 6px solid #F6285A;
     margin-left: 60px;
     margin-right: 60px;
+}
+.distribuidoras{
     min-height: 100vh;
 }
 .distribuidoraTitulo{
@@ -108,55 +167,11 @@
 }
 .ordenDistribuidoras{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.tarjeta{
-    height: 340px;
-    border: #F5BD19 solid 2px;
-    width: 18rem;
-    border-radius: 4px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-.cardDireccion{
-    min-height: 150px;
-    margin-top: 30px;
-    margin-bottom: -20px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.card-text{
-    text-align: center;
-    font-weight: 500;
-}
-.iconifyCard{
-    font-size: 40px;
-    text-decoration: none;
-    color: #25D366;
-}
-.mapa{
-    border-radius: 5px;
-    width: 150px;
-    height: 90%;
-    background-color: #F6285A;
-    font-weight: 600;
-    color: white;
-}
-.mapa:hover{
-    background-color: white;
-    height: 30px;
-    color: #F6285A;
-}
-.cardTitulos{
-    text-align: center;
-}
-.ordenButtomCard{
-    display: flex;
-    justify-content: space-around;
-    align-items: center
-}
+
 /* Heladerias */
 .heladerias{
     background-image: url(../image/background\ heladerias.jpg);
@@ -177,30 +192,13 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
-.tarjetaHelados{
-    height: 329px;
-    border: #F5BD19 solid 2px;
-    width: 18rem;
-    border-radius: 4px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-.cardDireccionHelados{
-    height: 160px;
-    padding: 30px;
-    background-color: white;
-}
-.ordenButtomCardHelados{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-}
+
+
 /* Mision-Vision-Valores */
 .sectionObjetivos{
     align-items: center;
     background-color: #F6285A;
-    height: 70vh;
+    min-height: 70vh;
 }
 .objetivosFlex{
     display: flex;
@@ -218,16 +216,18 @@
     font-size: 50px;
     color: white;
     align-self: center;
+    width: 25%;
 }
 .objetivosFlex p{
 
     padding-top: 30px;
     padding-right: 20px;
     margin-right: 5px;
+    width: 75%;
 }
 /*texto referencial */
 #emprendeConGuao{
-height: 100vh;
+    min-height: 100vh;
 }
 .sectionTitle {
     width: 35%;
@@ -331,8 +331,9 @@ height: 100vh;
 
 @media screen and (max-width: 1440px) {
     .logoPrincipal{
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
+        padding-top: 10px;
     }
     .textoPrincipal{
         align-self: flex-end;
@@ -345,9 +346,6 @@ height: 100vh;
     }
     .heladerias{
         min-height: 40vh;
-    }
-    .header{
-        background-position: -850px  
     }
     .section1{
         min-height: 70vh;
@@ -362,34 +360,19 @@ height: 100vh;
     }
     .textoNosotros {
         font-size: 40px;
+        width: 90%;
     }
     .imgNosotros{
         height: 500px;
         width: 500px;
     }
-    .tarjeta {
-        height: 370px;
+    #carouselExampleControls{
+        width: 100%;
     }
-    .cardDireccion, .cardDireccionHelados {
-        height: 180px;
-        font-size: 20px;
-        padding-left: 1px;
-        padding-right: 1px;
+    .tarjetaNueva {
+        margin-bottom: 50px;
     }
-    .mapa {
-        font-size: 20px;
-        margin-bottom: 2px;
-    }
-    .card-img-top-distribuidoras, .card-img-top-helados {
-        height: 130px;
-    }
-    .tarjetaHelados {
-        height: 354px;
-        border-radius: 1px;
-    }
-    .sectionObjetivos{
-        height: 1800px;
-    }
+    
     .objetivosFlex{
         flex-direction: column;
         align-items: center;
@@ -399,11 +382,14 @@ height: 100vh;
         width: 100%;
         text-align: center;
     }
+    .objetivosFlex h2 {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
     .header{
-        background-position: -1050px  
+        background-position: -550px  
     }
     .textoPrincipal{
         align-self: flex-end;
@@ -411,8 +397,14 @@ height: 100vh;
         margin-top: 50px;
         width: 65vw;
     }
+    .heladeriaTitulo {
+        margin: 60px;
+    }
+    
     .objetivosFlex p {
-        padding-left: 50px;
+        padding-left: 20px;
+        font-size: 30px;
+        width: 100%;
     }
     .image7 {
         flex-direction: column-reverse;
@@ -423,6 +415,8 @@ height: 100vh;
     .image7 p {
         width: 100%;
         margin-top: 10px;
+        padding: 50px;
+        text-align: center;
     }
     .ordenFooter {
         flex-direction: column;
@@ -432,14 +426,15 @@ height: 100vh;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px
-
     }
-
+    .sectionTitle {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 741px) {
     .header{
-        background-position: -1400px; 
+        background-position: -850px; 
         height: 120vh 
     }
     #carouselExampleControls{
@@ -448,7 +443,7 @@ height: 100vh;
     .textoPrincipal{
         align-self: flex-end;
         margin-right: 10px;
-        margin-top: 1000px;
+        margin-top: 100px;
         width: 65vw;
     }
     .nosotros {
@@ -459,31 +454,33 @@ height: 100vh;
         width: 400px;
     }
     .objetivosFlex p {
-        font-size: 20px;
-        margin-left: 50px;
+        font-size: 28px;
+        margin-left: 20px;
     }
     .footerEmail{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px
-
     }
 }
 
 @media screen and (max-width: 672px) {
+    .header {
+        background-position: 750px;
+    }
+    .textoPrincipal {
+        margin-top: 150px;
+        margin-right: 90px;
+    }
     .distribuidoraTitulo {
         margin: 30px;
-    }
-    .tarjetaHelados {
-        margin-bottom: 10px;
     }
     .footerEmail{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px
-
     }
     
 }
@@ -499,41 +496,8 @@ height: 100vh;
         margin-left: -50px;
         font-size: 55px;
     }
-    .tarjeta {
-        width: 500px;
-        height: 700px;
-    }
-    .card-img-top-distribuidoras {
-        height: 300px;
-    }
-    .cardTitulos {
-        font-size: 50px;
-    }
-    .cardDireccion {
-        height: 320px;
-        font-size: 30px;
-        padding-top: 10px;
-    }
-    .mapa {
-        font-size: 30px;
-        width: 220px;
-        height: 60px;
-    }
     .heladeriaTitulo {
         margin-left: 5px;
-    }
-    .tarjetaHelados {
-        width: 400px;
-        height: 700px;
-        margin-bottom: 2rem;
-    }
-    .card-img-top-helados {
-        height: 300px;
-    }
-    .cardDireccionHelados {
-        height: 335px;
-        font-size: 40px;
-        padding-top: 10px;
     }
     .objetivosFlex h2 {
         font-size: 40px;
@@ -573,32 +537,8 @@ height: 100vh;
     .distribuidoraTitulo {
         font-size: 45px;
     }
-    .tarjeta {
-        height: 1000px;
-    }
-    .cardDireccion {
-        height: 720px;
-        font-size: 45px;
-    }
-    .card-img-top-distribuidoras {
-        height: 200px;
-    }
     .heladeriaTitulo {
         font-size: 63px;
-    }
-    .tarjetaHelados {
-        width: 360px;
-    }
-    .card-img-top-helados {
-        height: 200px;
-    }
-    .cardDireccionHelados {
-        height: 435px;
-        font-size: 41px;
-        padding-top: 50px;
-    }
-    .ordenButtomCard, .ordenButtomCardHelados {
-        gap: 1rem;
     }
     .objetivosFlex {
         flex-direction: column;
@@ -662,16 +602,4 @@ height: 100vh;
     .heladeriaTitulo {
         font-size: 52px;
     }
-    .tarjetaHelados {
-        width: 310px;
-    }
-    .card-img-top-helados {
-        height: 200px;
-    }
-    .cardDireccionHelados {
-        height: 435px;
-        font-size: 36px;
-        padding-top: 30px;
-    }
-    
 }

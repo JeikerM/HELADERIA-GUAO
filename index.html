@@ -24,10 +24,8 @@
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        </ul>
-                        <div>
+                    <div class="collapse navbar-collapse bg-warning" id="navbarText">
+                        <div class="">
                             <ul class="menuColor navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <li class="nav-item">
                                     <a class="nav-link fs-5" aria-current="page" href="#nosotrosID">NOSOTROS</a>
@@ -93,65 +91,60 @@
                     </button>
                 </div>
             </div>
+            <div class="bordeDistribuidoras"></div>
             <section id="distribuidorasID" class="distribuidoras">
                 <h2 class="distribuidoraTitulo">DISTRIBUIDORAS</h2>
                 <div class="ordenDistribuidoras">
-
-                    <template v-for="distribuidora in distribuidoras">
-                        <div class="tarjeta">
-                            <img :src="distribuidora.imagen" class="card-img-top card-img-top-distribuidoras"
-                                alt="..." />
-                            <div class="card-body">
-                                <div class="cardDireccion">
-                                    <h3 class="cardTitulos">{{distribuidora.ciudad}}</h3>
-                                    <p class="card-text"> {{distribuidora.direccion}}</p>
-                                </div>
-                                <div class="ordenButtomCard">
-                                    <button class="mapa">Ver en el mapa</button>
-                                    <a target="_blank" :href="distribuidora.ws"><span class="iconify iconifyCard"
-                                            data-icon="bi:whatsapp"></span></a>
-                                </div>
-                            </div>
+                  <template v-for="distribuidora in distribuidoras">
+                    <div class="tarjetaNueva">
+                      <img :src="distribuidora.imagen" alt="" class="imgTarjeta">
+                      <div class="contenedorTarjeta">
+                        <h2 class="tituloTarjeta">{{distribuidora.ciudad}}</h2>
+                        <p class="textoTarjeta">{{distribuidora.direccion}}</p>
+                        <div class="contactosTarjeta">
+                          <button class="mapa">Ver en el mapa</button>
+                          <a target="_blank" :href="distribuidora.ws"><span class="iconify iconifyCard"
+                                    data-icon="bi:whatsapp"></span></a>
                         </div>
-                    </template>
+                      </div>
+                    </div>
+                  </template>
 
                 </div>
             </section>
             <section id="heladeriasID" class="heladerias">
                 <h2 class="heladeriaTitulo">HELADERIAS</h2>
                 <div class="ordenHeladerias">
-                    <template v-for="heladeria in heladerias">
-                        <div class="tarjetaHelados">
-                            <img :src="heladeria.imagen" class="card-img-top card-img-top-helados" alt="..." />
-                            <div class="card-body">
-                                <div class="cardDireccionHelados">
-                                    <h3 class="cardTitulos">{{heladeria.ciudad}}</h3>
-                                    <p class="card-text"> {{heladeria.direccion}}</p>
-                                </div>
-                                <div class="ordenButtomCardHelados">
-                                    <button class="mapa">Ver en el mapa</button>
-                                    <a target="_blank" :href="heladeria.ws"><span class="iconify iconifyCard"
-                                            data-icon="bi:whatsapp"></span></a>
-                                </div>
-                            </div>
+                  <template v-for="heladeria in heladerias">
+                    <div class="tarjetaNueva">
+                      <img :src="heladeria.imagen" alt="" class="imgTarjeta">
+                      <div class="contenedorTarjeta">
+                        <h2 class="tituloTarjeta">{{heladeria.ciudad}}</h2>
+                        <p class="textoTarjeta">{{heladeria.direccion}}</p>
+                        <div class="contactosTarjeta">
+                          <button class="mapa">Ver en el mapa</button>
+                          <a target="_blank" :href="heladeria.ws"><span class="iconify iconifyCard"
+                                    data-icon="bi:whatsapp"></span></a>
                         </div>
-                    </template>
+                      </div>
+                    </div>
+                  </template>
                 </div>
             </section>
             <div class="sectionObjetivos">
-                <div class="objetivosFlex w-100">
-                    <h2 class="w-25">MISIÓN</h2>
-                    <p class="w-60">Cumplir con los valores de reforzar la economía venezolana. Y que cada uno de nuestros clientes tengan la certeza de que pueden generar ingresos de forma segura trabajando de la mano con nosotros. 
+                <div class="objetivosFlex">
+                    <h2 class=" text-center">MISIÓN</h2>
+                    <p class="">Cumplir con los valores de reforzar la economía venezolana. Y que cada uno de nuestros clientes tengan la certeza de que pueden generar ingresos de forma segura trabajando de la mano con nosotros. 
 
                         Teniendo la certeza de trabajar con productos de primera calidad , y con un grupo de profesionales que los giaran a la venta exitosa de nuestros helados …</p>
                 </div>
                 <div class="objetivosFlex borderObjetivos w-100">
-                    <h2 class="w-25">VISIÓN</h2>
-                    <p class="w-75">Llegar a todos los rincones del país, saliendo desde la gran capital (Caracas) desde el 2020, y cumplir con cada uno de nuestros 23 estados venezolanos, siendo unas de las mejores marcas y productos del país, en cuanto a nuestro gremio se refiere.</p>
+                    <h2 class=" text-center">VISIÓN</h2>
+                    <p class="">Llegar a todos los rincones del país, saliendo desde la gran capital (Caracas) desde el 2020, y cumplir con cada uno de nuestros 23 estados venezolanos, siendo unas de las mejores marcas y productos del país, en cuanto a nuestro gremio se refiere.</p>
                 </div>
                 <div class="objetivosFlex borderObjetivos w-100">
-                    <h2 class="w-25">VALORES</h2>
-                    <p class="w-75">Mantener los mejores precios y la mejor calidad en nuestros productos, dándole la mejor atención y asesoria posible a nuestros clientes, llevándolos por el camino de éxito.</p>
+                    <h2 class=" text-center">VALORES</h2>
+                    <p class="">Mantener los mejores precios y la mejor calidad en nuestros productos, dándole la mejor atención y asesoria posible a nuestros clientes, llevándolos por el camino de éxito.</p>
                 </div>
             </div>
             <section id="emprendeConGuao">
