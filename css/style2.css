@@ -438,7 +438,7 @@
         height: 120vh 
     }
     #carouselExampleControls{
-        width: 100%;
+        width: 10%;
     }
     .textoPrincipal{
         align-self: flex-end;
