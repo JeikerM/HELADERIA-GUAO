@@ -359,7 +359,7 @@ justify-content: space-evenly;
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1650px) {
     .logoPrincipal{
         height: 200px;
         width: 200px;
