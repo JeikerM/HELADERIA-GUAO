@@ -211,6 +211,7 @@
 }
 .borderObjetivos{
     border-top: #F5BD19 dashed 2px;
+    width: 100%;
 }
 .objetivosFlex h2{
     font-size: 50px;
@@ -337,8 +338,8 @@
     }
     .textoPrincipal{
         align-self: flex-end;
-        margin-right: 10px;
-        margin-top: 50px;
+        margin-right: 30px;
+        margin-top: 200px;
         width: 35vw;
     }
     .distribuidoras{
@@ -386,7 +387,6 @@
         width: 100%;
     }
 }
-
 @media screen and (max-width: 1100px) {
     .header{
         background-position: -550px  
@@ -415,7 +415,6 @@
     .image7 p {
         width: 100%;
         margin-top: 10px;
-        padding: 50px;
         text-align: center;
     }
     .ordenFooter {
@@ -540,24 +539,19 @@
     .heladeriaTitulo {
         font-size: 63px;
     }
+    .borderObjetivos {
+        width: 100%;
+    }
     .objetivosFlex {
         flex-direction: column;
-        padding-left: 0px;
+        padding: 30px 0 0 0 ;
+        width: 100%;
     }
-    .objetivosFlex h2{
-        font-size: 70px;
-        color: white;
-        align-self: flex-start;
-        margin-left: 50px;
+    .objetivosFlex h2 {
+        width: 100%;
+        text-align: center;
     }
-    .objetivosFlex p{
-        width:90%!important;
-        padding-top: 0px;
-        padding-right: 0px;
-        margin-right: 0px;
-        margin-left: 10px;
-        padding-left: 5px;
-    }
+    
     .sectionTitle {
         font-size: 42px
     }
