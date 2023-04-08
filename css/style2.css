@@ -100,7 +100,7 @@
 /* Carrousel */
 #carouselExampleControls {
     height: 80%;
-    width: 80%;
+    width: 100%;
     margin-top: 200px;
     border: #F6285A 4px solid;
 }
@@ -154,7 +154,7 @@
     background-image: url(../image/background\ heladerias.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 20px;
 }
 .heladeriaTitulo{
@@ -201,7 +201,7 @@ justify-content: space-evenly;
     background-image: url(../image/background\ heladerias.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    min-height: 100vh;
     padding-top: 20px;
 }
 .heladeriaTitulo{
@@ -216,7 +216,6 @@ justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
 
 /* Mision-Vision-Valores */
 .sectionObjetivos{
@@ -235,6 +234,7 @@ justify-content: space-evenly;
 }
 .borderObjetivos{
     border-top: #F5BD19 dashed 2px;
+    width: 100%;
 }
 .objetivosFlex h2{
     font-size: 50px;
@@ -367,16 +367,16 @@ justify-content: space-evenly;
     }
     .textoPrincipal{
         align-self: flex-end;
-        margin-right: 10px;
-        margin-top: 50px;
+        margin-right: 30px;
+        margin-top: 200px;
         width: 35vw;
     }
     .distribuidoras{
         min-height: 50vh;
     }
-    .heladerias{
+    /* .heladerias{
         min-height: 40vh;
-    }
+    } */
     .section1{
         min-height: 70vh;
         width: 98vw;
@@ -396,9 +396,6 @@ justify-content: space-evenly;
         height: 500px;
         width: 500px;
     }
-    #carouselExampleControls{
-        width: 100%;
-    }
     .tarjetaNueva {
         margin-bottom: 50px;
     }
@@ -416,7 +413,6 @@ justify-content: space-evenly;
         width: 100%;
     }
 }
-
 @media screen and (max-width: 1100px) {
     .header{
         background-position: -550px  
@@ -445,7 +441,6 @@ justify-content: space-evenly;
     .image7 p {
         width: 100%;
         margin-top: 10px;
-        padding: 50px;
         text-align: center;
     }
     .ordenFooter {
@@ -465,10 +460,7 @@ justify-content: space-evenly;
 @media screen and (max-width: 741px) {
     .header{
         background-position: -850px; 
-        height: 120vh 
-    }
-    #carouselExampleControls{
-        width: 10%;
+        height: 100vh 
     }
     .textoPrincipal{
         align-self: flex-end;
@@ -503,9 +495,15 @@ justify-content: space-evenly;
         margin-top: 150px;
         margin-right: 90px;
     }
+    .textoNosotros {
+        margin-right: 1px;
+    }
     .distribuidoraTitulo {
         margin: 30px;
     }
+    /* .heladerias{
+        min-height: 80vh;
+    } */
     .footerEmail{
         display: flex;
         flex-direction: column;
@@ -516,18 +514,24 @@ justify-content: space-evenly;
 }
 @media screen and (max-width: 580px) {
     .header{
+        height: 90vh;
         background-position: -1700px  
     }
     .textoPrincipal{
         margin-top: 50px;
         width: 85vw;
+        font-size: 60px;
+        margin-right: 30px;
+    }
+    .nosotros {
+        margin-left: 0;
     }
     .distribuidoraTitulo {
-        margin-left: -50px;
-        font-size: 55px;
+        margin-left: 50px;
+        font-size: 50px;
     }
     .heladeriaTitulo {
-        margin-left: 5px;
+        margin-left: 30px;
     }
     .objetivosFlex h2 {
         font-size: 40px;
@@ -551,13 +555,23 @@ justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px
-
     }
+    
 }
 @media screen and (max-width: 480px) {
     .nosotros{
-        margin-left: 0;
         font-size: 50px;
+    }
+    .separador {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .textoNosotros {
+        width: 100%;
+    }
+    .nosotrosLine {
+        font-size: 42px;
+        font-weight: 800;
     }
     .imgNosotros {
         height: 300px;
@@ -566,27 +580,26 @@ justify-content: space-evenly;
     }
     .distribuidoraTitulo {
         font-size: 45px;
+        margin-left: 20px;
     }
     .heladeriaTitulo {
+        margin-left: 8px;
         font-size: 63px;
+    }
+    .borderObjetivos {
+        width: 100%;
     }
     .objetivosFlex {
         flex-direction: column;
-        padding-left: 0px;
+        padding: 30px 0 0 0 ;
+        width: 100%;
     }
-    .objetivosFlex h2{
-        font-size: 70px;
-        color: white;
-        align-self: flex-start;
-        margin-left: 50px;
+    .objetivosFlex h2 {
+        width: 100%;
+        text-align: center;
     }
-    .objetivosFlex p{
-        width:90%!important;
-        padding-top: 0px;
-        padding-right: 0px;
-        margin-right: 0px;
-        margin-left: 10px;
-        padding-left: 5px;
+    .politica h2 {
+        margin-left: 1px ;
     }
     .sectionTitle {
         font-size: 42px
@@ -610,6 +623,9 @@ justify-content: space-evenly;
     .nosotros{
         font-size: 40px;
     }
+    .textoPrincipal {
+        font-size: 50px;
+    }
     .distribuidoraTitulo {
         font-size: 38px;
     }
@@ -626,9 +642,6 @@ justify-content: space-evenly;
 }
 
 @media screen and (max-width: 320px) {
-    .textoPrincipal{
-        font-size: 60px;
-    }
     .heladeriaTitulo {
         font-size: 52px;
     }
