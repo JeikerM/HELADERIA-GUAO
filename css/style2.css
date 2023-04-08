@@ -559,6 +559,12 @@ justify-content: space-evenly;
     
 }
 @media screen and (max-width: 480px) {
+    .section1{
+        margin: 0;
+    }
+    #nosotrosID{
+        margin: 0;
+    }
     .nosotros{
         font-size: 50px;
     }
@@ -588,6 +594,10 @@ justify-content: space-evenly;
     }
     .borderObjetivos {
         width: 100%;
+    }
+
+    .objetivosFlex p{
+        margin: 0;
     }
     .objetivosFlex {
         flex-direction: column;
