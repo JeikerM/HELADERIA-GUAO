@@ -359,7 +359,7 @@ justify-content: space-evenly;
 }
 
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1440px) {
     .logoPrincipal{
         height: 200px;
         width: 200px;
@@ -370,7 +370,7 @@ justify-content: space-evenly;
         margin-right: 10px;
         margin-top: 100px;
         width: 35vw;
-        font-size:  35px;
+        
     }
     .distribuidoras{
         min-height: 50vh;
@@ -469,6 +469,7 @@ justify-content: space-evenly;
         margin-right: 10px;
         margin-top: 100px;
         width: 65vw;
+        font-size:  35px;
     }
     .nosotros {
         font-size: 60px;
