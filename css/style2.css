@@ -10,6 +10,15 @@
 }
 .container-fluid{
     height: 120px;
+    background-color:  rgba(0, 0, 0, 0);
+}
+.menuFlex{
+    display: flex;
+    justify-content:center;
+}
+.menuColor li a{
+    color:#60291C;
+    font-weight: 900;
 }
 .header {
     display: flex;
@@ -44,10 +53,12 @@
 }
 
 .imgNosotros{
-    width: 25%;
+    height: 40%;
+    width: 30%;
     margin-left: 50px;
 }
 .textoNosotros{
+    color: #60291C;
     font-size: 35px;
     width: 50%;
     word-wrap: break-word;
@@ -55,11 +66,13 @@
     font-weight: 600
 }
 .separador{
+    height: 300px;
     border-top: #F6285A solid 8px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: 90px;
+    margin-top: 50px;
     align-items: center;
+    padding-bottom: 50px;
 }
 .nosotros{
     padding: 30px;
@@ -67,11 +80,17 @@
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 60px;
-    font-size: 90px;
-    color: black;
+    font-size: 70px;
+    color: #60291C;
+}
+.nosotrosLine{
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .ordenSectionNosotros{
     display: flex;
+    align-items: center;
     justify-content: space-around;
     margin-left: 60px;
     border-bottom: #F5BD19 8px solid;
@@ -94,43 +113,14 @@
 }
 /* Carrousel */
 /* Card */
-.tarjetaNueva {
-    min-height: 300px;
+.card{
+    height: 400px;
     border: #F5BD19 solid 2px;
-    width: 18rem;
-    border-radius: 4px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    background-color: white;
 }
-.imgTarjeta {
-    width: 100%;
-    height: 40%;
-}
-.contenedorTarjeta {
-    height: 60%;
-    width: 100%;
-}
-.tituloTarjeta {
-    height: 20%;
+.card-text{
     text-align: center;
-    padding: 20px;
-}
-.textoTarjeta {
-    height: 45%;
-    text-align: center;
-    padding: 20px 5px 0px 10px;
     font-weight: 500;
-    font-size: 20px;
 }
-.contactosTarjeta {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 20%;
-    margin-bottom: 50px;
-}
-
 .iconifyCard{
     font-size: 40px;
     text-decoration: none;
@@ -139,9 +129,8 @@
 .mapa{
     border-radius: 5px;
     width: 150px;
-    height: 60%;
+    height: 90%;
     background-color: #F6285A;
-    font-size: 18px;
     font-weight: 600;
     color: white;
 }
@@ -149,6 +138,41 @@
     background-color: white;
     height: 30px;
     color: #F6285A;
+}
+.cardTitulos{
+    text-align: center;
+}
+.ordenButtomCard{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+/* Heladerias */
+.heladerias{
+    margin-top: 60px;
+    background-image: url(../image/background\ heladerias.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    padding-top: 20px;
+}
+.heladeriaTitulo{
+    margin: 60px;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 150px;
+}
+.ordenHeladerias{
+    display: flex;
+justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.cardHeladerias{
+    height: 350px;
+    border: #F5BD19 solid 2px;
 }
 /*Card*/
 /* Distribuidoras */
@@ -158,7 +182,7 @@
     margin-right: 60px;
 }
 .distribuidoras{
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .distribuidoraTitulo{
     margin: 60px;
@@ -177,7 +201,7 @@
     background-image: url(../image/background\ heladerias.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    height: 80vh;
     padding-top: 20px;
 }
 .heladeriaTitulo{
@@ -220,11 +244,19 @@
     width: 25%;
 }
 .objetivosFlex p{
-
+    color: white;
     padding-top: 30px;
     padding-right: 20px;
     margin-right: 5px;
     width: 75%;
+}
+.politica h2{
+    width: 20%;
+    margin-left: 40px;
+}
+.objetivosFlex {
+    display: flex;
+    justify-content: space-between;
 }
 /*texto referencial */
 #emprendeConGuao{
@@ -235,6 +267,7 @@
     font-size: 80px;
     padding: 4rem;
     text-transform: uppercase;
+    color: #60291C;
 }
 .image7{
     display: flex;
@@ -246,7 +279,8 @@
     width: 35%;
 }
 .image7 p{
-    font-size: 30px;
+    color: #60291C;
+    font-size: 40px;
     width: 40%;
     text-align: unset;
 }
@@ -254,15 +288,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: #F6285A 3px solid;
-    margin-top: 60px;
-    margin-left: 50px;
-    margin-right: 60px;
 }
 .imageCreciendoContigo{
     width: 100%;
     height: 100%;
-    margin-top: 60px;
+
 }
 
 /* footer */ 
@@ -315,18 +345,18 @@
 .whatsapp{
     font-size: 40px;
     text-decoration: none;
-    color: #25D366;
+    color: #F5BD19;
     margin-bottom: 20px;
 }
 .instagram{
     font-size: 50px;
     text-decoration: none;
-    color: #f34470;
+    color: #F5BD19;
 }
 .facebook{
     font-size: 40px;
     text-decoration: none;
-    color: #1877F2;
+    color: #F5BD19;
 }
 
 
@@ -437,7 +467,7 @@
         height: 120vh 
     }
     #carouselExampleControls{
-        width: 100%;
+        width: 10%;
     }
     .textoPrincipal{
         align-self: flex-end;

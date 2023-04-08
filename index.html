@@ -8,15 +8,15 @@
     <meta name="keywords" content="comercio,dulces,distribuidora,caracas,eventos,encargos, cumpleaños, bodas" />
     <title>Document</title>
     <link rel="shortcut icon" href="./image/logo-guao-4K-FULL-HD.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style2.css">
     <title>GUAO HELADOS</title>
 </head>
 <div id="app">
 
     <body>
         <header class="header">
-            <nav class="navbar navbar-expand-lg bg-warning sticky-top">
+            <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
                     <a href="#"><img src="./image/logo-guao-4K-FULL-HD.png" class="logoPrincipal"
                             alt="Logo-Guao-Helados"></a>
@@ -24,7 +24,7 @@
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-warning" id="navbarText">
+                    <div class="collapse navbar-collapse menuFlex" id="navbarText">
                         <div class="">
                             <ul class="menuColor navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <li class="nav-item">
@@ -53,14 +53,12 @@
                 </div>
                 <div class="ordenSectionNosotros">
                     <img class="imgNosotros" src="./image/Recurso 2.png" alt="Mujer-feliz-comiendo-helado" />
-                    <p class="textoNosotros">
-                        Somos una empresa joven, familiar creyendo en el país desde muy temprano y tiempos difíciles…
-                        <br>
-                        Apostando a que si se puede, llevaremos esto al <b>MÁXIMO</b>
-                        <br>
-                        Nuestra marca nació el 23 de diciembre el 2020, en la apertura de nuestro primer centro de
-                        distribución en caracas, ubicado en la avenida Lecuna.
-                    </p>
+                    <div class="textoNosotros">
+                      <p>Somos una empresa joven, familiar creyendo en el país desde muy temprano y tiempos difíciles…</p>
+                      <p class="nosotrosLine">Apostando a que si se puede, llevaremos esto al <b>MÁXIMO</b></p>
+                      <p>Nuestra marca nació el 23 de diciembre el 2020, en la apertura de nuestro primer centro de
+                        distribución en caracas, ubicado en la avenida Lecuna.</p>
+                    </div>
                 </div>
             </section>
             <div class="fondoCarrousel">
@@ -95,42 +93,110 @@
             <section id="distribuidorasID" class="distribuidoras">
                 <h2 class="distribuidoraTitulo">DISTRIBUIDORAS</h2>
                 <div class="ordenDistribuidoras">
-                  <template v-for="distribuidora in distribuidoras">
-                    <div class="tarjetaNueva">
-                      <img :src="distribuidora.imagen" alt="" class="imgTarjeta">
-                      <div class="contenedorTarjeta">
-                        <h2 class="tituloTarjeta">{{distribuidora.ciudad}}</h2>
-                        <p class="textoTarjeta">{{distribuidora.direccion}}</p>
-                        <div class="contactosTarjeta">
-                          <button class="mapa">Ver en el mapa</button>
-                          <a target="_blank" :href="distribuidora.ws"><span class="iconify iconifyCard"
-                                    data-icon="bi:whatsapp"></span></a>
-                        </div>
+                  <div class="card" class="cardPersonal" style="width: 18rem">
+                    <img src="./image/image carrousel 3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Caracas</h3>
+                      <p class="card-text">
+                        Av. Lecuna <br> Esquina el conde<br> frente al campo de Beisbol "El Capu"
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=584122091837&text=¡Hola buenas tardes!"><span
+                            class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
                       </div>
                     </div>
-                  </template>
-
+                  </div>
+                  <div class="card" class="cardPersonal" style="width: 18rem">
+                    <img src="./image/image carrousel 3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Caracas</h3>
+                      <p class="card-text">
+                        Catia <br> Calle Bolivia <br> 2da avenida Nueva Caracas.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href="https://api.whatsapp.com/send?phone=584241505167&text=¡Hola buenas tardes!"><span
+                            class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" class="cardPersonal" style="width: 18rem">
+                    <img src="./image/image carrousel 3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Caracas</h3>
+                      <p class="card-text">
+                        Caricuao <br> Redoma de Ruiz Pineda, frente al supremo.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href="https://api.whatsapp.com/send?phone=584125931370&text=¡Hola buenas tardes!"><span
+                            class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" class="cardPersonal" style="width: 18rem">
+                    <img src="./image/image carrousel 3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Miranda</h3>
+                      <p class="card-text">
+                        Guatire <br> Calle sucre y Anzoátegui, <br> Res. Belén Blanco, local B, PB. Guatire.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href="https://api.whatsapp.com/send?phone=584124221688&text=¡Hola buenas tardes!"><span
+                            class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" class="cardPersonal" style="width: 18rem">
+                    <img src="./image/image carrousel 3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Miranda</h3>
+                      <p class="card-text">
+                        Los Teques<br>Bajada El Tambor<br>frente a la urbanización Simón Bolívar , Centro Comercial<br>San José.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href="https://api.whatsapp.com/send?phone=584120195058&text=¡Hola buenas tardes!"><span
+                            class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
-            <section id="heladeriasID" class="heladerias">
+                </div>
+              </section>
+              <section id="heladeriasID" class="heladerias">
                 <h2 class="heladeriaTitulo">HELADERIAS</h2>
                 <div class="ordenHeladerias">
-                  <template v-for="heladeria in heladerias">
-                    <div class="tarjetaNueva">
-                      <img :src="heladeria.imagen" alt="" class="imgTarjeta">
-                      <div class="contenedorTarjeta">
-                        <h2 class="tituloTarjeta">{{heladeria.ciudad}}</h2>
-                        <p class="textoTarjeta">{{heladeria.direccion}}</p>
-                        <div class="contactosTarjeta">
-                          <button class="mapa">Ver en el mapa</button>
-                          <a target="_blank" :href="heladeria.ws"><span class="iconify iconifyCard"
-                                    data-icon="bi:whatsapp"></span></a>
-                        </div>
+                  <div class="card cardHeladerias" style="width: 18rem">
+                    <img src="./image/guatire.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Caracas</h3>
+                      <p class="card-text">
+                        CC Propatria<br>Calle sucre y Anzoátegui,<br>Res. Belén Blanco, local B, PB. Guatire.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
                       </div>
                     </div>
-                  </template>
+                  </div>
+                  <div class="card cardHeladerias" style="width: 18rem">
+                    <img src="./image/guatire.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h3 class="cardTitulos">Caracas</h3>
+                      <p class="card-text">
+                        Centro<br>Av. José Vicente Rangel<br>Norte 4, esquina el conde.
+                      </p>
+                      <div class="ordenButtomCard">
+                        <button class="mapa">Ver en el mapa</button>
+                        <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></span></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </section>
             <div class="sectionObjetivos">
                 <div class="objetivosFlex">
                     <h2 class=" text-center">MISIÓN</h2>
@@ -142,8 +208,8 @@
                     <h2 class=" text-center">VISIÓN</h2>
                     <p class="">Llegar a todos los rincones del país, saliendo desde la gran capital (Caracas) desde el 2020, y cumplir con cada uno de nuestros 23 estados venezolanos, siendo unas de las mejores marcas y productos del país, en cuanto a nuestro gremio se refiere.</p>
                 </div>
-                <div class="objetivosFlex borderObjetivos">
-                    <h2 class=" text-center">VALORES</h2>
+                <div class="objetivosFlex borderObjetivos w-100 politica">
+                    <h2 class=" text-center">NUESTRA POLÍTICA</h2>
                     <p class="">Mantener los mejores precios y la mejor calidad en nuestros productos, dándole la mejor atención y asesoria posible a nuestros clientes, llevándolos por el camino de éxito.</p>
                 </div>
             </div>
