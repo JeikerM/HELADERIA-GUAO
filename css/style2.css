@@ -427,6 +427,9 @@ justify-content: space-evenly;
     .heladeriaTitulo {
         margin: 60px;
     }
+    .heladerias{
+        height: 650px;
+    }
     
     .objetivosFlex p {
         padding-left: 20px;
@@ -478,6 +481,7 @@ justify-content: space-evenly;
         height: 400px;
         width: 400px;
     }
+    
     .objetivosFlex p {
         font-size: 28px;
         margin-left: 20px;
